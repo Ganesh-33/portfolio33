@@ -5,26 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Portfolio</title>
     <style>
-        /* General Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
         }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f0f0f0;
             color: #333;
         }
-
         a {
             text-decoration: none;
             color: inherit;
         }
-
-        /* Header and Navigation */
         header {
             background-color: #222;
             color: white;
@@ -34,7 +29,6 @@
             top: 0;
             z-index: 1000;
         }
-
         nav {
             display: flex;
             justify-content: space-between;
@@ -43,7 +37,6 @@
             margin: auto;
             padding: 0 20px;
         }
-
         nav h1 {
             font-size: 24px;
             font-weight: bold;
@@ -53,7 +46,6 @@
             display: flex;
             list-style: none;
         }
-
         nav ul li {
             margin-left: 30px;
         }
@@ -62,13 +54,10 @@
             font-weight: bold;
             color: white;
         }
-
         nav ul li a:hover {
             color: #f39c12;
             transition: 0.3s;
         }
-
-        /* Home Section */
         .home-section {
             height: 100vh;
             background-image: url('background.jpg');
@@ -80,23 +69,19 @@
             text-align: center;
             color: white;
         }
-
         .home-section .intro {
             background-color: rgba(0, 0, 0, 0.6);
             padding: 40px;
             border-radius: 10px;
         }
-
         .intro h2 {
             font-size: 50px;
             margin-bottom: 10px;
         }
-
         .intro p {
             font-size: 24px;
             margin-bottom: 20px;
         }
-
         .btn {
             background-color: #f39c12;
             color: white;
@@ -105,36 +90,28 @@
             font-size: 16px;
             transition: background-color 0.3s ease;
         }
-
         .btn:hover {
             background-color: #e67e22;
         }
-
-        /* About Section */
         .about-section {
             padding: 80px 20px;
             background-color: #fff;
             text-align: center;
         }
-
         .about-section h2 {
             font-size: 36px;
             margin-bottom: 20px;
         }
-
         .about-section p {
             font-size: 18px;
             max-width: 700px;
             margin: 0 auto;
         }
-
-        /* Projects Section */
         .projects-section {
             padding: 80px 20px;
             background-color: #f4f4f4;
             text-align: center;
         }
-
         .projects-section h2 {
             font-size: 36px;
             margin-bottom: 40px;
@@ -146,7 +123,6 @@
             flex-wrap: wrap;
             gap: 30px;
         }
-
         .project-card {
             background-color: white;
             padding: 20px;
@@ -155,33 +131,26 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
-
         .project-card:hover {
             transform: scale(1.05);
         }
-
         .project-card h3 {
             font-size: 24px;
             margin-bottom: 10px;
         }
-
-        /* Contact Section */
         .contact-section {
             padding: 80px 20px;
             background-color: #fff;
             text-align: center;
         }
-
         .contact-section h2 {
             font-size: 36px;
             margin-bottom: 40px;
         }
-
         .contact-section form {
             max-width: 600px;
             margin: 0 auto;
         }
-
         .contact-section input,
         .contact-section textarea {
             width: 100%;
@@ -190,7 +159,6 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-
         .contact-section button {
             background-color: #f39c12;
             color: white;
@@ -199,19 +167,15 @@
             border-radius: 5px;
             cursor: pointer;
         }
-
         .contact-section button:hover {
             background-color: #e67e22;
         }
-
-        /* Footer */
         footer {
             background-color: #222;
             color: white;
             text-align: center;
             padding: 30px 0;
         }
-
         footer p {
             margin: 0;
         }
