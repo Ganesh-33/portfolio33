@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        nav h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+            transition: 0.3s;
+        }
+
+        /* Home Section */
+        .home-section {
+            height: 100vh;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .home-section .intro {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .intro h2 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e67e22;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 80px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            padding: 80px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .projects-section h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .contact-section form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-section button {
+            background-color: #f39c12;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-section button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="intro">
+            <h2>Hello, I'm [Ganesh]</h2>
+            <p>Web Developer & Designer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer with experience in front-end and back-end technologies. I build modern, responsive, and user-friendly websites using technologies like HTML, CSS, JavaScript, and more.</p>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>An interactive web application developed using React.js.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>A full-stack e-commerce platform with integrated payment systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
